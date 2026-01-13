@@ -1,5 +1,6 @@
 # Data
 *.parquet
+ny_taxi*/
 
 # Python
 __pycache__/
