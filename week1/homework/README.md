@@ -20,7 +20,7 @@ docker run -it --rm --entrypoint=bash python:3.13-slim
 pip --version
 ```
 
-Answer: 25.3
+**Answer**: 25.3
 
 ## Question 2. Understanding Docker networking and docker-compose
 
@@ -72,4 +72,27 @@ If multiple answers are correct, select any
 
 pgadmin and the postgres database are running on the same Docker Compose network, and can find according to their names. Hence, pgadmin should use 'db' as the hostname and '5432' as the port to connect to the postgres database (In '5433:5432', '5432' is the postgres port inside the container.)
 
-Answer: db:5432 
+**Answer**: db:5432 
+
+## Question 3. Counting short trips
+
+### Question 
+
+For the trips in November 2025 (lpep_pickup_datetime between '2025-11-01' and '2025-12-01', exclusive of the upper bound), how many trips had a `trip_distance` of less than or equal to 1 mile?
+
+- 7,853
+- 8,007
+- 8,254
+- 8,421
+
+### Solution
+
+```sql
+SELECT COUNT(*)
+FROM public.green_tripdata
+WHERE lpep_pickup_datetime >= TIMESTAMP '2025-11-01' 
+	AND lpep_pickup_datetime < TIMESTAMP '2025-12-01'
+	AND trip_distance <= 1
+```
+
+**Answer**: 8,007

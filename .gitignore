@@ -1,5 +1,6 @@
 # Data
 *.parquet
+*.csv
 ny_taxi*/
 
 # Python
