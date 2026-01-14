@@ -74,5 +74,3 @@ def main(pg_user, pg_pass, pg_host, pg_port, pg_db, year, month, chunksize, targ
 
 if __name__ == '__main__':
     main()
-
-
