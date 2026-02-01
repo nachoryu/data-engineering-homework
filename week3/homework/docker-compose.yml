@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  duckdb:
+    image: duckdb/duckdb:latest
+    container_name: duckdb-warehouse
+    volumes:
+      - ./data:/data
+      - ./db:/db
+    tty: true
+    stdin_open: true

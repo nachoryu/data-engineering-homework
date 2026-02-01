@@ -3,6 +3,9 @@
 *.csv
 ny_taxi*/
 
+# DB
+*.duckdb
+
 # Python
 __pycache__/
 *.py[cod]
