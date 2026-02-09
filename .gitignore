@@ -5,6 +5,7 @@ ny_taxi*/
 
 # DB
 *.duckdb
+*.db
 
 # Python
 __pycache__/
