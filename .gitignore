@@ -1,7 +1,10 @@
 # Data
 *.parquet
 *.csv
+*.csv.gz
 ny_taxi*/
+*.crc
+*_SUCCESS
 
 # DB
 *.duckdb
