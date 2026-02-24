@@ -32,5 +32,6 @@ htmlcov/
 .DS_Store
 
 .bruin.yml
+logs
 logs/runs
 logs/*.log
